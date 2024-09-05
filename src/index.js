@@ -25,9 +25,9 @@ function handleCors(request) {
 
 addEventListener('fetch', (event) => {
 	if(event.request.method === 'OPTIONS') {
-		event.responsWith(handleCors(event.request));
+		event.responWith(handleCors(event.request));
 	}else{
-		event.responsWith(handleRequest(event.request));
+		event.responWith(handleRequest(event.request));
 	}
 });
 
